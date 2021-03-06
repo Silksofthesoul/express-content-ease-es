@@ -1,0 +1,9 @@
+{
+  "ignore": [
+    "public",
+    "node_modules",
+    ".git",
+    "node_modules/**/node_modules"
+  ],
+  "watch": ["dist"]
+}
