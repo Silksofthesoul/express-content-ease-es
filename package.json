@@ -9,7 +9,7 @@
   },
   "author": "Labuzov Evgeny <silksofthesoul@yandex.ru>",
   "license": "CC0-1.0",
-  "private": true,
+  "private": false,
   "main": "dist/main.js",
   "scripts": {
     "start": "node dist/main.js",
