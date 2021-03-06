@@ -1,0 +1,39 @@
+{
+  "name": "express-content-ease-es",
+  "version": "0.0.0",
+  "description": "server",
+  "homepage": "https://github.com/Silksofthesoul/express-content-ease-es#readme",
+  "bugs": {
+    "url": "https://github.com/Silksofthesoul/express-content-ease-es/issues",
+    "email": "silksofthesoul@yandex.ru"
+  },
+  "author": "Labuzov Evgeny <silksofthesoul@yandex.ru>",
+  "license": "CC0-1.0",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "node dist/main.js",
+    "demon": "nodemon dist/main.js",
+    "debug": "nodemon --inspect dist/main.js",
+    "build:dev": "rimraf dist && webpack --mode development",
+    "build:prod": "rimraf dist && webpack --mode production"
+  },
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-minify-html": "^0.12.0",
+    "hbs": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.13.9",
+    "@babel/preset-env": "^7.13.9",
+    "babel-loader": "^8.2.2",
+    "dotenv": "^8.2.0",
+    "html-webpack-plugin": "^5.2.0",
+    "rimraf": "^3.0.2",
+    "string-replace-loader": "^3.0.1",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
