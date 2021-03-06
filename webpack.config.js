@@ -5,11 +5,13 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 require('dotenv').config();
 
-const $dist = {key: '@dist', value: path.resolve(__dirname, 'dist')};
-const $lib = {key: '@lib', value: path.resolve(__dirname, 'src/library')};
-const $root = {key: '@root', value: __dirname};
-const $public = {key: '@public', value: path.resolve(__dirname, 'public')};
-const $src = {key: '@src', value: path.resolve(__dirname, 'src')};
+const aFabric = (key, value) => ({ key, value: path.resolve(__dirname, value) });
+
+const $dist = aFabric('@dist', 'dist');
+const $lib = aFabric('@lib', 'src/library');
+const $root = aFabric('@root', '');
+const $public = aFabric('@public', 'public');
+const $src = aFabric('@src', 'src');
 
 const pathAliases = [
   $dist,
